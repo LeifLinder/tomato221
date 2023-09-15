@@ -113,6 +113,7 @@ class setupgoals extends conn{
     }
      
         print('<form method="post" action="bounce.goals.edit.php">');
+       // print('<input type="hidden" value="'..'" name=""')
         print('<tr>');
         print('<td><div class="titleBox2 '.$success_style.'"><a href="">'.$index.'</a></div></td>');
         print('<td><input type="submit" value="Set Goal"/></td>');
@@ -123,9 +124,6 @@ class setupgoals extends conn{
         print('<input type="hidden" value="'.$index.'" name="goal_id">');
         print('</form>');
         print('<td><input type="text" value="'.$thisweek.'" class="form-control"/></td>');
-        print('</tr>');
-        print('<tr>');
-        print('<td colspan="4">Something here</td>');
         print('</tr>');
       
   }
