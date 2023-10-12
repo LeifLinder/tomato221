@@ -114,7 +114,7 @@ class pagemaster
 
             case "index":
                 message();
-                print('<p>Home</p>');
+                print('<p>Tomato221 (2023-10-11)</p>');
                 break;
 
             case "categories":
