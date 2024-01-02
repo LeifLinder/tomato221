@@ -46,7 +46,6 @@ class pagemaster
                 }
                 break;
 
-                //// ***** KEYWORDS PAGES ***** ////
             case "keywords":
                 message();
                 $keywordclass = new createKeyword;
@@ -71,20 +70,19 @@ class pagemaster
                 }
                 break;
 
-                //// ***** VIEWS PAGES ***** ////
             case "views":
                 message();
-                //    $generic= new viewweek;
+                   $generic= new viewweek;
                 // week_number_only() sets week number for object, then genreic_time_view() creates all the object properties based on that week number
-                // $generic->testsvg(200);
-                // $generic->sixtytoms();
-                // $generic->week_number_only();
-                //  print('<p>'.$generic->week_formated_like_database.'</p>');
-                //  $generic->generic_time_view();
+                 $generic->testsvg(200);
+                 $generic->sixtytoms();
+                 $generic->week_number_only();
+                  print('<p>'.$generic->week_formated_like_database.'</p>');
+                  $generic->generic_time_view();
                 // $generic = new viewweek;
-                //  $generic->week_number_only(1);
-                //   print('<p>'.$generic->week_formated_like_database.'</p>');
-                //   $generic->generic_time_view();
+                  $generic->week_number_only(1);
+                  print('<p>'.$generic->week_formated_like_database.'</p>');
+                  $generic->generic_time_view();
                 break;
 
             case "goals":
@@ -114,7 +112,7 @@ class pagemaster
 
             case "index":
                 message();
-                print('<p>Tomato221 (2023-10-11)</p>');
+                print('<p>Index Page</p>');
                 break;
 
             case "categories":
@@ -137,9 +135,10 @@ class pagemaster
             case "todo":
                 message();
                 print('<h4>Todo</h4>');
+                $todo = new todo_create;
+                $todo->form_create_task();
                 include('../public/todo.html');
                 break;
-
             default:
                 echo "<p>page has not been defined</p>";
                 // $this->index_page();

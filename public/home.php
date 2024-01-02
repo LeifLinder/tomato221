@@ -32,6 +32,8 @@ include ('../classes/class.view.day.php');
 include ('../classes/class.view.week.php');
 include ('../classes/class.setup.setup.php');
 include ('../classes/class.sidebar.php');
+include ('../classes/class.todo.create.php');
+include ('../classes/config/settings.php');
 
 
 include ('./includes/header.php');
@@ -45,6 +47,8 @@ if($_GET['page']){
   $clean_get_page = filter_var($_GET['page'], FILTER_SANITIZE_SPECIAL_CHARS);
 }
 
+// get sidebar links
+// using file '../classes/class.sidebar.php'
 $sidebar = new sidebar;
 
 print('<div class="container">');

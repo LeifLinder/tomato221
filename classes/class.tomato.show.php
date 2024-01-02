@@ -6,7 +6,7 @@ class showtomatoes extends conn
     private $defaultWeekNumber;
     private $daynumber = array(1 => 'Monday', 2 => 'Tuesday', 3 => 'Wednesday', 4 => 'Thursday', 5 => 'Friday', 6 => 'Saturday', 7 => 'Sunday');
 
-   /* 
+   
     private function job_search_daily_goal()
     {
         $today = date("Y-m-d");
@@ -23,7 +23,7 @@ class showtomatoes extends conn
             }
         }
     }
-*/
+    
     private function default_week_setting()
     {
         $currentWeekNumber = date('Y') . "-W" . date('W');

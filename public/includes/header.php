@@ -19,6 +19,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <style>
+         #timer-div{
+            background-color: black;
+         }
+      </style>
    </head>
    <script>
 function Populate_Description_Function() {
@@ -28,4 +33,8 @@ function Populate_Description_Function() {
 </script>
 
    <body class="modal-open-noscroll" onload="updateCalendar(); setInterval('updateCalendar()', 1000 )">
+
+   <div id="timer-div">
+   <iframe src="timer.php" style="overflow:hidden;height:50px;width:100%;border:0px;padding:0px;" height="50px" width="100%"></iframe>
+   </div>
    

@@ -25,8 +25,6 @@ class createCategory extends conn{
             }else{
                 $message="Problem";
             }
-
-
         }
 
         $this->conn=NULL;

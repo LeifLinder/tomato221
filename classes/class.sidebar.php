@@ -5,6 +5,8 @@ class sidebar extends conn {
         switch ($pagelink) {
             case "tomato":
                 print('<li>Tomato Sidebar</li>');
+                print('<li><a href="home.php?page=todo">To Do List</a></li>');
+                print('<li><a href="timer.php" target="_blank">Timer</a></li>');
                 break;
             case "tomatoedit":
                 print('<li>tomatoedit</li>');

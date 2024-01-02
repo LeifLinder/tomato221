@@ -1,3 +1,12 @@
+<?PHP session_start();
+$_SESSION['userid']=1001;
+// $_SESSION['timer_window']="none";
+?>
+<?php
+include ("../classes/config/class.conn.php");
+include ("../classes/class.todo.php");
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,6 +27,11 @@
         <th>No.</th>
         <th>Status</th>
         <th>Task</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>Not Done</td>
+        <td>Way to see way back in time. With pagination it would be possible to show all the tomatoes as in pagination only the 30 or so entrees will show per page.</td>
     </tr>
     <tr>
         <td>0</td>
